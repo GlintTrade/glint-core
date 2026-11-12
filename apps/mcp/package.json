@@ -1,0 +1,39 @@
+{
+  "name": "@glint/mcp",
+  "version": "0.1.0",
+  "description": "Glint MCP server: create and manage AI spot-trading agents on Lighter from Claude Code, Codex or any MCP client. Never signs, never holds keys.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "glint-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    ".env.example",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlintTrade/glint-core.git",
+    "directory": "apps/mcp"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "tsup": "^9.0.0"
+  }
+}

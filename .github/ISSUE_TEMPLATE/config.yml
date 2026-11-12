@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://x.com/Glint_Trade
+    about: Report vulnerabilities privately by X direct message to @Glint_Trade, never in a public issue.
+  - name: Product support
+    url: https://tradeglint.xyz/docs
+    about: Questions about using Glint.

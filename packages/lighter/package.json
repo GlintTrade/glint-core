@@ -1,0 +1,33 @@
+{
+  "name": "@glint/lighter",
+  "version": "0.1.0",
+  "description": "Lighter client for Robinhood Chain spot markets: REST, market data, order formatting, WASM signer wiring (create order, cancel, cancel all) and API-key onboarding.",
+  "license": "BUSL-1.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlintTrade/glint-core.git",
+    "directory": "packages/lighter"
+  },
+  "dependencies": {
+    "@glint/strategy": "0.1.0",
+    "viem": "^2.57.17"
+  },
+  "homepage": "https://tradeglint.xyz"
+}

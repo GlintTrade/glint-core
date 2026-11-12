@@ -1,0 +1,31 @@
+{
+  "name": "@glint/indicators",
+  "version": "0.1.0",
+  "description": "Pure technical indicators (EMA, RSI, change, volatility) computed from Lighter candles.",
+  "license": "BUSL-1.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlintTrade/glint-core.git",
+    "directory": "packages/indicators"
+  },
+  "dependencies": {
+    "@glint/strategy": "0.1.0"
+  },
+  "homepage": "https://tradeglint.xyz"
+}

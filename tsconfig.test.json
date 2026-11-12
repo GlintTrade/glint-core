@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true,
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": false,
+    "paths": {
+      "@glint/strategy": ["./packages/strategy/src/index.ts"],
+      "@glint/indicators": ["./packages/indicators/src/index.ts"],
+      "@glint/lighter": ["./packages/lighter/src/index.ts"],
+      "@glint/risk": ["./packages/risk/src/index.ts"],
+      "@glint/agenthub": ["./packages/agenthub/src/index.ts"],
+      "@glint/runner": ["./packages/runner/src/index.ts"],
+      "@glint/erc8004": ["./packages/erc8004/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "packages/*/test", "apps/mcp/src", "apps/mcp/test", "vitest.config.ts", "apps/mcp/tsup.config.ts"]
+}

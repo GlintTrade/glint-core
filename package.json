@@ -1,0 +1,45 @@
+{
+  "name": "glint-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Glint: AI agents that trade spot on Lighter, with receipts on Robinhood Chain. Strategy specs, risk engine, decision loop, Lighter client, AgentHub interface, ERC-8004 identity and the MCP server.",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://tradeglint.xyz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlintTrade/glint-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GlintTrade/glint-core/issues"
+  },
+  "type": "module",
+  "workspaces": [
+    "packages/strategy",
+    "packages/indicators",
+    "packages/lighter",
+    "packages/risk",
+    "packages/agenthub",
+    "packages/runner",
+    "packages/erc8004",
+    "apps/mcp"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -b && npm run build -w @glint/mcp",
+    "clean": "tsc -b --clean && npm run clean -w @glint/mcp",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "examples": "node examples/validate-spec.mjs && node examples/risk-engine.mjs && node examples/simulated-tick.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.6",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,30 @@
+Glint Core is licensed per package. Each package directory contains the
+LICENSE that applies to it, and the "license" field of its package.json
+states the same.
+
+  Business Source License 1.1 (BUSL-1.1)
+    packages/strategy      packages/strategy/LICENSE
+    packages/indicators    packages/indicators/LICENSE
+    packages/lighter       packages/lighter/LICENSE
+    packages/risk          packages/risk/LICENSE
+    packages/runner        packages/runner/LICENSE
+    packages/erc8004       packages/erc8004/LICENSE
+
+    Licensor: Glint. Non-production use (reading, auditing, research,
+    testing, personal non-commercial use) is granted. Production or
+    commercial use requires a commercial license from Glint (contact
+    @Glint_Trade on X, https://x.com/Glint_Trade). Each version converts
+    to the Apache License, Version 2.0 on its Change Date (2030-11-12 for
+    v0.1.0).
+
+  Apache License, Version 2.0 (Apache-2.0)
+    packages/agenthub      packages/agenthub/LICENSE
+                           (Solidity interface, ABI, client, receipt encoding)
+    apps/mcp               apps/mcp/LICENSE
+                           (MCP server)
+
+Files outside these directories (build configuration, documentation, CI)
+are provided under the Apache License, Version 2.0.
+
+Copyright (c) 2026 Glint. "Glint" and the Glint logo are trademarks of
+Glint and are not licensed under either license.
